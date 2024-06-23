@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+*{
+    padding: 0px;
+    margin: 5px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+    background-color:#E7DEDA;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+#right img,#left img{
+    width: 50px;
+}
+
+#butt_page{
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 15px;
+}
+
+
+#all {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin:1%;
+    border:5px double #5C4C3C;
+}
+#page{
+    border-radius: 50px;
+    border:2px double #cca474;
+}
+
+button{
+    margin-bottom:3%;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #CCA474;
+    border: none;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+h5{
+    color: #5C4C3C;
+}
+
+h1{
+    color: #9f8265;
+    text-align: center;
+}
+#audio{
+    border-radius:30px;
+}
+
+#page_num,#speed,#re {
+    text-align: center;
+    border: 3px dotted #cca474;
+    border-radius: 25px;
+    font-size:120%;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+select{
+    background-color: #9f8265;
+    color:white;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) and (min-width: 300px){
+    #page {
+        width: 300px;
+    }
+}
+
+#audio_s{
+    display: flex;
+    align-items :center;
+    justify-items: center;
+}
+.speed{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border: #5C4C3C 2px ;
+    border-radius:10px;
+}
+#speed{
+    width: 30px;
+}
+
+#speed_t,#page_num_t,#re_t,#lo_t{
+    font-size: 20px;
+}
+
+#style_speed{
+    border: #5C4C3C 2px dotted;
+    border-radius:20px;
+}
+
+#re{
+    width: 50px;
+}
+
+#controls{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="imgs/1.png">
+    <title>holy quran viewer</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="button.css" rel="stylesheet" type="text/css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CP9F9LDH84"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-CP9F9LDH84');
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <h1>
+            Holy Quran viewer v4
+        </h1>
+        <section id="all">
+            <img src="https://quran.ksu.edu.sa/ayat/safahat1/1.png" id="page">
+            <div class="butt_page">
+                <button id="left" onclick="left()">
+                    <img src="imgs/left.svg">
+                </button>
+                <button id="right" onclick="right()">
+                    <img src="imgs/right.svg">
+                </button>
+            </div>
+            <h4>this page is on
+                <span id="rorl">
+                    right
+                </span>
+                <img id="rorlimg" src="https://quran.ksu.edu.sa/images/book_right.png">
+            </h4>
+            <button id="sh"></button>
+
+            <div id="loop">
+                <label for="lo" id="lo_t">loop : </label>
+                <input type="checkbox" id="lo" value="on">
+            </div>
+            <div id="loop">
+                <label for="auto" id="auto_t">autoplay : </label>
+                <input type="checkbox" id="auto" value="on">
+            </div>
+
+
+            <div id="controls">
+                <div class="row">
+                    <label for="sounds">voice of the sheikh :</label>
+                    <select id="sounds" onchange="check(2)"></select>
+
+                </div>
+
+                <div class="row">
+
+                    <label for="alQiraat">the Qira of the page : </label>
+                    <select id="alQiraat" onchange="check(1)"></select>
+
+                </div>
+
+
+            </div>
+            <div id="audio_s">
+                <audio controls id="audio"></audio>
+                <div id="style_speed">
+                    <div class="speed">
+                        <label for="speed" id="speed_t">speed</label>
+                        <input type="text" id="speed" value="1">
+                        <button onclick="speed()">speed</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <label for="page_num" id="page_num_t">
+                page number :
+            </label>
+
+            <input type="number" width="200" id="page_num" min="1" max="604">
+
+
+            <button id="search" id="button" onclick="h()">
+
+                <span>
+
+                    view
+
+                </span>
+
+            </button>
+
+        </section>
+        <div class="row">
+            <h5>version 4</h5>
+            <a href="https://patreon.com/user?u=80298211"><img src="patreon.svg" alt="patreon" width="30"></a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
